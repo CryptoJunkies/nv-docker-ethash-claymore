@@ -27,7 +27,8 @@ docker run --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 cryptojunkies/claymore "
 
 ## History
 
-TODO: Write history
+2018-13-01
+Initial creation and build by CultClassik
 
 ## Credits
 
