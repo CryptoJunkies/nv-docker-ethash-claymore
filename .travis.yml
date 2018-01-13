@@ -9,7 +9,7 @@ services:
 
 script:
   - TAG="eth-nv-10.3"
-  - TAGL=eth-nv-latest"
+  - TAGL="eth-nv-latest"
   - CONT_NAME="claymore"
   - REPO="cryptojunkies"
   - docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
