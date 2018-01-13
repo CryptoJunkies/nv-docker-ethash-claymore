@@ -1,0 +1,20 @@
+sudo: required
+
+language: bash
+
+dist: xenial
+
+services:
+  - docker
+
+script:
+  - TAG="eth-nv-10.3"
+  - TAGL=eth-nv-latest"
+  - CONT_NAME="claymore"
+  - REPO="cryptojunkies"
+  - docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+  - docker build -t $REPO/$CONT_NAME:$TAGL ./build
+  - docker images
+  - docker tag $REPO/$CONT_NAME:latest $REPO/$CONT_NAME:$TAG
+  - docker push $REPO/$CONT_NAME:$TAG
+  - docker push $REPO/$CONT_NAME:$TAGL
