@@ -6,7 +6,7 @@ LABEL maintainer="Chris Diehl <cultclassik@gmail.com>"
 ENV NVIDIA_VISIBLE_DEVICES=0
 ENV NVIDIA_DRIVER_CAPABILITIES="compute,utility"
 
-ENV CMREL="https://s3-us-west-1.amazonaws.com/mastermine/minebox/claymore_Ethereum%2BDecred_Siacoin_Lbry_Pascal_gpu_v10.3_+LINUX.tar.gz"
+ENV CMREL="https://s3-us-west-1.amazonaws.com/mastermine/minebox/Claymore_Dual_Ethereum%2BDecred_Siacoin_Lbry_Pascal_Blake2s_Keccak_gpu_v11.0_LINUX.tar.gz"
 
 ENV GPU_FORCE_64BIT_PTR=0
 ENV GPU_MAX_HEAP_SIZE=100
